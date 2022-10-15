@@ -31,4 +31,5 @@ python RevMax.py 1 15 1 3 2
 ```
 
 Gurobi Optimizer version 9.0.2 is required to run NashMax and RevMax.
+
 Results are saved in results/[algo_name]/ folder
