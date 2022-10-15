@@ -1,5 +1,5 @@
 # Towards Fair Allocation In Social Commerce
-## Use bellow command to run algorithms
+## Use bellow commands to run algorithms
 ```bash
 cd code_www
 python [algoname].py [Instance] [L] [alpha] [Epsilon] [R2_option]
