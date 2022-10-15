@@ -1,6 +1,7 @@
 # Towards Fair Allocation In Social Commerce
 ## Use bellow command to run algorithms
 ```bash
+cd code_www
 python [algoname].py [Instance] [L] [alpha] [Epsilon] [R2_option]
 ```
 Where 
@@ -30,6 +31,7 @@ To run RevMax use:
 python RevMax.py 1 15 1 3 2
 ```
 
+You need Python3.6.9 to run above code.
 Gurobi Optimizer version 9.0.2 is required to run NashMax and RevMax.
 
 Results are saved in results/[algo_name]/ folder
