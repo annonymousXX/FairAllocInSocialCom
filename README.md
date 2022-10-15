@@ -3,10 +3,10 @@
 ```bash
 python [algoname].py [Instance] [L] [alpha] [Epsilon] [R2_option]
 ```
-- Where 
-- **Instance is the dataset instance.
-- **For alpha, take a value greator than 0 but less than or equal to 1. (0 <alpha<=1)
-- **R2_option = 1 for R2 = number-of-re-sellers and R2_option = 2 for R2 = 2*R1, 
+Where 
+- Instance is the dataset instance.
+- For alpha, take a value greator than 0 but less than or equal to 1. (0 <alpha<=1)
+- R2_option = 1 for R2 = number-of-re-sellers and R2_option = 2 for R2 = 2*R1, 
 
 
 for example:
