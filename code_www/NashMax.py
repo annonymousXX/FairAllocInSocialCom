@@ -53,6 +53,8 @@ def NashMax(fileName,instance,L,alpha,epsilon,R2_option):
     R1 = int(alpha*L1*users/items)
     if(R2_option == 2):
         R2 = R1 * 2
+    elif(R2_option == 3):
+        R2 = R1 + 1
     else :
         R2 = users
     
