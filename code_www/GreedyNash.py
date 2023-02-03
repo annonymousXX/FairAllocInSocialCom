@@ -5,7 +5,7 @@
 
 
 import _pickle as cPickle
-import implicit 
+#import implicit 
 import pandas as pd
 import numpy as np
 #from tqdm.notebook import tqdm
@@ -16,15 +16,15 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
 import os
 import statistics
-from scipy.sparse import csr_matrix, dok_matrix
-import _pickle as cPickle
+#from scipy.sparse import csr_matrix, dok_matrix
+#import _pickle as cPickle
 import sys
-import sklearn
-from sklearn import preprocessing
+#import sklearn
+#from sklearn import preprocessing
 import os
 from statistics import mean
 #from . import utils
-import utils
+#import utils
 
 
 def swap_for_cardinality(fin,V,R):
@@ -204,7 +204,7 @@ if __name__ == '__main__':
     epsilon = int(sys.argv[4])
     epsilon = 0
     R2_option = int(sys.argv[5])
-    fileName = f"../scripts/runtime_results/randomInstance/instance{instance}_v100_u100_randint_1000.npy"
+    fileName = f"data/instance{instance}_v100_u100_randint_1000.npy"
     v = np.load(f"{fileName}")
     users = v.shape[0]
     items = v.shape[1]
