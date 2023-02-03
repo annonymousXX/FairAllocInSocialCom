@@ -165,7 +165,9 @@ def GreedyNash(file, L, R):
         rec_size = len(A[user_idx])
         while (rec_size < L):
             #print("balancing cardinality for user", user_idx, " with ",L-rec_size)
-            store_feature = np.array([1 if (i not in A[user_idx]) else 0 for i in range(items)])
+            prod_indices = np.where(count_to_buy>R-R2)[0]
+            store_feature = np.array([1 if (i in prod_indices and i not in A[user_idx]) else 0 for i in range(items)])
+            #store_feature = np.array([1 if (i not in A[user_idx]) else 0 for i in range(items)])
             store_feature = store_feature * v[user_idx]
             idx = np.argmax(store_feature)
             count_to_buy[idx] -= 1
