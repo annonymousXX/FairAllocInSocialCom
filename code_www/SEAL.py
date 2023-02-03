@@ -24,7 +24,7 @@ import sys
 import os
 from statistics import mean
 #from . import utils
-import utils
+#import utils
 
 
 def swap_for_cardinality(fin,V,R):
