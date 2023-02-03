@@ -135,7 +135,9 @@ def SEAL(file, L, R):
                 A[user_idx].append(idx)
                 utility[user_idx] += store_feature[idx]
             else :
-                store_feature = np.array([1 if i not in A[user_idx] else 0 for i in range(items)])
+                prod_indices = np.where(count_to_buy>R-R2)[0]
+                store_feature = np.array([1 if (i in prod_indices and  i not in A[user_idx]) else 0 for i in range(items)])
+                #store_feature = np.array([1 if i not in A[user_idx] else 0 for i in range(items)])
                 store_feature = store_feature * v[user_idx]
                 idx = np.argmax(store_feature)
                 A[user_idx].append(idx)
@@ -182,6 +184,8 @@ if __name__ == '__main__':
     R1 = int(alpha*L1*users/items)
     if(R2_option == 2):
         R2 = R1 * 2
+    elif(R2_option == 3):
+        R2 = R1 + 1
     else :
         R2 = users
     
