@@ -5,7 +5,7 @@
 
 
 import _pickle as cPickle
-import implicit 
+#import implicit 
 import pandas as pd
 import numpy as np
 #from tqdm.notebook import tqdm
@@ -16,11 +16,11 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
 import os
 import statistics
-from scipy.sparse import csr_matrix, dok_matrix
+#from scipy.sparse import csr_matrix, dok_matrix
 import _pickle as cPickle
 import sys
-import sklearn
-from sklearn import preprocessing
+#import sklearn
+#from sklearn import preprocessing
 import os
 from statistics import mean
 #from . import utils
