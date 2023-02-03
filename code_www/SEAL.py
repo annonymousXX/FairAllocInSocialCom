@@ -100,7 +100,7 @@ def swap_for_cardinality(fin,V,R):
     fin2_final = np.array(fin2)
     return fin2_final
 
-def SEAL(file, L, R):
+def SEAL(file, L, R, R2):
     
     v = np.load(file)
     users = v.shape[0]
@@ -193,7 +193,7 @@ if __name__ == '__main__':
     print("users->",users,":",L1,"-",L2)
     print("items->",items,":",R1,"-",R2)
     start_time = time.time()
-    fin = SEAL(fileName, L, R1)
+    fin = SEAL(fileName, L, R1, R2)
     time_taken = (time.time() - start_time)
     
     
