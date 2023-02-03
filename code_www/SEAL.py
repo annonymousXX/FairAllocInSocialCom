@@ -140,6 +140,7 @@ def SEAL(file, L, R):
                 #store_feature = np.array([1 if i not in A[user_idx] else 0 for i in range(items)])
                 store_feature = store_feature * v[user_idx]
                 idx = np.argmax(store_feature)
+                count_to_buy[idx] -= 1
                 A[user_idx].append(idx)
                 utility[user_idx] += store_feature[idx]
 
